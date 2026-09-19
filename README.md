@@ -55,7 +55,7 @@ A scan attempts at most 14 supported file bodies, each at most 128 KiB; it does 
 
 No publisher backend, account, analytics, ads, AI service or remote executable code. The service worker sends necessary repository/Git identifiers and an optional token directly to GitHub. Cookies are omitted. Only language is durable in `chrome.storage.local`; token, quota state and up to eight normalized reports are in `chrome.storage.session`. Report freshness is five minutes, not a continuously running deletion timer. Raw file maps are not cached or exported.
 
-Reports and clipboard text may still contain private paths, project details or secrets not caught by best-effort redaction. Inspect before sharing. Session storage is not an encrypted vault. Token changes clear cached reports; browser restart or extension reload clears session data. [Bundled privacy policy](public/privacy-policy.html).
+Reports and clipboard text may still contain private paths, project details or secrets not caught by best-effort redaction. Inspect before sharing. Session storage is not an encrypted vault. Token changes clear cached reports; browser restart or extension reload clears session data. [Bundled privacy policy](<https://jtech-co.github.io/RepoRun/public/privacy-policy.html>).
 
 ## Build and test
 
