@@ -1,0 +1,7 @@
+{
+  "unbound": "Failed to execute 'fetch' on 'WorkerGlobalScope': Illegal invocation",
+  "production": {
+    "status": 200,
+    "text": "ok"
+  }
+}

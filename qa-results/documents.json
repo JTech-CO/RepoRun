@@ -1,0 +1,109 @@
+{
+  "checks": [
+    {
+      "name": "privacy-policy has local PNG favicon (light)",
+      "pass": true
+    },
+    {
+      "name": "privacy-policy light logo decoded",
+      "pass": true
+    },
+    {
+      "name": "privacy-policy light both languages present",
+      "pass": true
+    },
+    {
+      "name": "privacy-policy light no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "privacy-policy has local PNG favicon (dark)",
+      "pass": true
+    },
+    {
+      "name": "privacy-policy dark logo decoded",
+      "pass": true
+    },
+    {
+      "name": "privacy-policy dark both languages present",
+      "pass": true
+    },
+    {
+      "name": "privacy-policy dark no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "help has local PNG favicon (light)",
+      "pass": true
+    },
+    {
+      "name": "help light logo decoded",
+      "pass": true
+    },
+    {
+      "name": "help light both languages present",
+      "pass": true
+    },
+    {
+      "name": "help light no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "help has local PNG favicon (dark)",
+      "pass": true
+    },
+    {
+      "name": "help dark logo decoded",
+      "pass": true
+    },
+    {
+      "name": "help dark both languages present",
+      "pass": true
+    },
+    {
+      "name": "help dark no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "export handler creates a Markdown filename",
+      "pass": true
+    },
+    {
+      "name": "export includes pinned evidence",
+      "pass": true
+    },
+    {
+      "name": "export omits environment example values",
+      "pass": true
+    },
+    {
+      "name": "hostile markup remains visible literal text",
+      "pass": true
+    },
+    {
+      "name": "hostile repository text does not create an HTML image",
+      "pass": true
+    },
+    {
+      "name": "hostile onerror does not execute",
+      "pass": true
+    },
+    {
+      "name": "PNG 16 has matching dimensions",
+      "pass": true
+    },
+    {
+      "name": "PNG 32 has matching dimensions",
+      "pass": true
+    },
+    {
+      "name": "PNG 48 has matching dimensions",
+      "pass": true
+    },
+    {
+      "name": "PNG 128 has matching dimensions",
+      "pass": true
+    }
+  ],
+  "notes": "Offline DOM/asset checks. Export intercepts the generated report, not a native download."
+}

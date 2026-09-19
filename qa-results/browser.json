@@ -1,0 +1,191 @@
+{
+  "browser": "144.0.7559.96",
+  "checks": [
+    {
+      "name": "no GitHub requests from a page visit",
+      "pass": true
+    },
+    {
+      "name": "one injected badge",
+      "pass": true
+    },
+    {
+      "name": "overview displays runtime declaration",
+      "pass": true
+    },
+    {
+      "name": "overview shows explicit unknown static compatibility",
+      "pass": true
+    },
+    {
+      "name": "environment values never reach the rendered panel",
+      "pass": true
+    },
+    {
+      "name": "environment names present",
+      "pass": true
+    },
+    {
+      "name": "all logo resources decode",
+      "pass": true
+    },
+    {
+      "name": "all evidence is commit-pinned",
+      "pass": true
+    },
+    {
+      "name": "scan uses read-only GET requests",
+      "pass": true
+    },
+    {
+      "name": "literal scripts are visible",
+      "pass": true
+    },
+    {
+      "name": "no execute control is present",
+      "pass": true
+    },
+    {
+      "name": "README commands are extracted",
+      "pass": true
+    },
+    {
+      "name": "copy uses visible script text",
+      "pass": true
+    },
+    {
+      "name": "copy does not make an API request",
+      "pass": true
+    },
+    {
+      "name": "evidence differentiates presence-only files",
+      "pass": true
+    },
+    {
+      "name": "real .env excluded from report inventory",
+      "pass": true
+    },
+    {
+      "name": "keyboard tabs change selection",
+      "pass": true
+    },
+    {
+      "name": "Korean locale applied",
+      "pass": true
+    },
+    {
+      "name": "GitHub dark tokens inherited",
+      "pass": true
+    },
+    {
+      "name": "Escape closes the dialog",
+      "pass": true
+    },
+    {
+      "name": "focus returns to injected badge",
+      "pass": true
+    },
+    {
+      "name": "reopening a fresh report uses cache",
+      "pass": true
+    },
+    {
+      "name": "cache status shown",
+      "pass": true
+    },
+    {
+      "name": "subdirectory warning present",
+      "pass": true
+    },
+    {
+      "name": "subdirectory source links remain pinned",
+      "pass": true
+    },
+    {
+      "name": "credential/cache change invalidates visible report",
+      "pass": true
+    },
+    {
+      "name": "path traversal rejected by UI",
+      "pass": true
+    },
+    {
+      "name": "HTTP 401 is not a generic network message",
+      "pass": true
+    },
+    {
+      "name": "network error retains actual browser detail",
+      "pass": true
+    },
+    {
+      "name": "compact dialog stays within viewport",
+      "pass": true
+    },
+    {
+      "name": "compact panel has no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "badge removed on non-repository route",
+      "pass": true
+    },
+    {
+      "name": "settings makes no automatic GitHub request",
+      "pass": true
+    },
+    {
+      "name": "token save does not claim authentication success",
+      "pass": true
+    },
+    {
+      "name": "token field cleared after save",
+      "pass": true
+    },
+    {
+      "name": "token not leaked in local settings",
+      "pass": true
+    },
+    {
+      "name": "anonymous and saved-token diagnostics both complete",
+      "pass": true
+    },
+    {
+      "name": "diagnostics explicitly are not repository authorization proof",
+      "pass": true
+    },
+    {
+      "name": "settings supports Korean",
+      "pass": true
+    },
+    {
+      "name": "token removal empties session credential",
+      "pass": true
+    },
+    {
+      "name": "popup recognizes active GitHub repository",
+      "pass": true
+    },
+    {
+      "name": "popup icon decodes",
+      "pass": true
+    },
+    {
+      "name": "popup settings control has a real handler",
+      "pass": true
+    },
+    {
+      "name": "native Worker reproduces unbound Illegal invocation",
+      "pass": true
+    },
+    {
+      "name": "production client bound fetch returns HTTP 200 in native Worker",
+      "pass": true
+    },
+    {
+      "name": "no unhandled browser page errors",
+      "pass": true
+    }
+  ],
+  "pageErrors": [],
+  "mode": "offline simulated Chrome/GitHub plus native dedicated Worker fetch"
+}

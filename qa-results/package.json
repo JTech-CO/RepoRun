@@ -1,0 +1,149 @@
+{
+  "checks": [
+    {
+      "name": "ZIP CRC integrity",
+      "pass": true
+    },
+    {
+      "name": "manifest is at ZIP root",
+      "pass": true
+    },
+    {
+      "name": "ZIP contains precisely the dist file set",
+      "pass": true
+    },
+    {
+      "name": "all archived bytes equal dist bytes",
+      "pass": true
+    },
+    {
+      "name": "QA tests, fixtures, env files and source-only docs excluded",
+      "pass": true
+    },
+    {
+      "name": "no absolute or traversal ZIP names",
+      "pass": true
+    },
+    {
+      "name": "version aligned",
+      "pass": true
+    },
+    {
+      "name": "Manifest V3",
+      "pass": true
+    },
+    {
+      "name": "storage is the only API permission",
+      "pass": true
+    },
+    {
+      "name": "host permissions are GitHub-only",
+      "pass": true
+    },
+    {
+      "name": "only bundled SVG exposed on GitHub",
+      "pass": true
+    },
+    {
+      "name": "every manifest reference exists",
+      "pass": true
+    },
+    {
+      "name": "no runtime package dependencies",
+      "pass": true
+    },
+    {
+      "name": "public tree copied byte-for-byte",
+      "pass": true
+    },
+    {
+      "name": "source module tree copied byte-for-byte",
+      "pass": true
+    },
+    {
+      "name": "SVG hash matches branding record",
+      "pass": true
+    },
+    {
+      "name": "all PNG hashes match branding record",
+      "pass": true
+    },
+    {
+      "name": "options all local HTML links resolve",
+      "pass": true
+    },
+    {
+      "name": "popup all local HTML links resolve",
+      "pass": true
+    },
+    {
+      "name": "help all local HTML links resolve",
+      "pass": true
+    },
+    {
+      "name": "privacy-policy all local HTML links resolve",
+      "pass": true
+    },
+    {
+      "name": "Single Purpose within 1000 characters including spaces",
+      "pass": true
+    },
+    {
+      "name": "storage within 1000 characters including spaces",
+      "pass": true
+    },
+    {
+      "name": "Host access: https://github.com/* within 1000 characters including spaces",
+      "pass": true
+    },
+    {
+      "name": "Host permission: https://api.github.com/* within 1000 characters including spaces",
+      "pass": true
+    },
+    {
+      "name": "Description has no Key Features heading",
+      "pass": true
+    },
+    {
+      "name": "Description within 16000 characters",
+      "pass": true
+    },
+    {
+      "name": "Short Description within 132 characters",
+      "pass": true
+    },
+    {
+      "name": "no eval or Function-constructor execution",
+      "pass": true
+    },
+    {
+      "name": "no HTML injection sinks",
+      "pass": true
+    },
+    {
+      "name": "no POST/PUT/PATCH/DELETE request methods",
+      "pass": true
+    },
+    {
+      "name": "native fetch binding present in shipped transport",
+      "pass": true
+    },
+    {
+      "name": "service worker imports only packaged local scripts",
+      "pass": true
+    }
+  ],
+  "version": "1.0.1",
+  "installFiles": 30,
+  "installBytes": 60709,
+  "sha256": "065888230650865fba37231255ce34d3a12924f52fc4487b1d414b7594fa5eb6",
+  "fieldCharacters": {
+    "Short Description": 38,
+    "Description": 2005,
+    "Single Purpose": 481,
+    "storage": 606,
+    "Host access: https://github.com/*": 627,
+    "Host permission: https://api.github.com/*": 684
+  },
+  "note": "Static/package checks, not installed extension or live API certification."
+}

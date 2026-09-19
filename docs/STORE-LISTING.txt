@@ -1,0 +1,33 @@
+Chrome Web Store Listing
+
+<Short Description>
+See What a Repo Needs Before You Clone
+
+<Description>
+RepoRun - See What a Repo Needs Before You Clone
+
+RepoRun adds a Run setup button below About in the right-hand sidebar on GitHub repository pages, without crowding the header. When no visible right sidebar is available, a small icon button appears at the bottom right. Open it before you download or clone a project to see the setup declared in its files, with links to the exact commit inspected.
+
+Check runtime versions, package-manager declarations and lockfile clues, build scripts, environment variable names and container-related files in one panel. Declared information, inferences and unknowns are labeled separately, so a missing setting does not become a guessed requirement.
+
+Browse literal package.json scripts and a small sample of README command examples. Copying text does not run it. The extension never installs dependencies, executes repository scripts or modifies GitHub content. It does not guarantee a successful build or static-hosting compatibility.
+
+Inspect the repository root or specify a subdirectory. Evidence links stay pinned to the inspected commit. English and Korean interfaces follow GitHub's light and dark themes, with keyboard-accessible controls and a Markdown report export.
+
+Public repositories work within GitHub's anonymous API allowance. An optional fine-grained token with Contents read access supports authorized private repositories. Tokens and temporary reports use Chrome session storage, not a publisher server. Environment-example values are discarded; only variable names are shown.
+
+Version 1.0 focuses on Node.js and static-web setup signals in a single directory on the default branch. It does not resolve parent settings, expand workspaces, inspect the user's computer, or evaluate executable configuration. Larger or unreadable files are reported rather than silently treated as absent.
+
+No publisher account, backend, analytics, advertising, AI service or remote executable code. RepoRun is independent and is not affiliated with GitHub or Google.
+
+<Single Purpose>
+RepoRun has one purpose: help users inspect the declared execution setup of a GitHub project before cloning it. It reads a bounded set of configuration and documentation files at one default-branch commit, then shows runtime declarations, package-manager clues, literal scripts, environment variable names and source evidence. Declared facts, inferences and unknowns are distinguished. It does not install dependencies, run commands, modify GitHub content or certify build success.
+
+<storage>
+Used to save the interface language in chrome.storage.local and the optional GitHub token, API rate-limit state and temporary normalized reports in chrome.storage.session. Reports are fresh for five minutes, bounded to eight entries and a size limit. Raw setup files and environment-example assignment values are not persisted. Tokens are not saved to local/sync storage or included in exported reports; they are sent only to api.github.com when supplied. Settings can remove the token or clear the cache. Browser restart or extension reload clears session data. There is no publisher backend or analytics.
+
+<Host access: https://github.com/*>
+Used to identify the current repository from its URL and repository page markers, place the Run setup button below About or in a compact bottom-right fallback, display the evidence panel, and follow GitHub's client-side navigation. Only repository pages receive the control. Page visits do not initiate analysis requests; users open the panel or explicitly inspect a directory. Setup files are obtained through the GitHub API, not by scraping code or issue bodies from the page. The bundled logo SVG is the only web-accessible resource and is restricted to github.com. RepoRun does not request browser-history or cookie access.
+
+<Host permission: https://api.github.com/*>
+Used for read-only GET requests to GitHub's official API: repository metadata, the latest default-branch commit, non-recursive Git trees and selected Git blobs. A fixed /rate_limit request is used only for user-initiated diagnostics. File selection and byte limits are enforced in the service worker; arbitrary URLs are not accepted from page messages. Requests include necessary repository/object identifiers and normal HTTP metadata. An optional token is sent only to api.github.com in the Authorization header; website cookies are omitted. Results are processed locally and are never sent to a RepoRun server. The extension neither executes fetched code nor performs GitHub writes.

@@ -1,0 +1,12 @@
+import {cp,rm,mkdir,readFile,writeFile,access} from 'node:fs/promises';
+import {resolve,join} from 'node:path';
+import {spawnSync} from 'node:child_process';
+const root=resolve(import.meta.dirname,'..'),dist=join(root,'dist');
+const checked=spawnSync(process.execPath,[join(root,'scripts/check.mjs')],{stdio:'inherit'});if(checked.status!==0)process.exit(checked.status||1);
+const css=await readFile(join(root,'src/shared/styles.css'),'utf8');
+await writeFile(join(root,'src/shared/styles.js'),'/* Generated from styles.css by the build. */\nglobalThis.RepoRun.styles = '+JSON.stringify(css)+';\n');
+await rm(dist,{recursive:true,force:true});await mkdir(dist,{recursive:true});await cp(join(root,'public'),dist,{recursive:true});await cp(join(root,'LICENSE'),join(dist,'LICENSE'));
+for(const name of ['shared','background','content','options','popup'])await cp(join(root,'src',name),join(dist,name),{recursive:true});
+const m=JSON.parse(await readFile(join(dist,'manifest.json'),'utf8'));
+for(const file of [m.background.service_worker,m.action.default_popup,m.options_ui.page,...m.content_scripts.flatMap(x=>x.js),...Object.values(m.icons),...Object.values(m.action.default_icon),...m.web_accessible_resources.flatMap(x=>x.resources),'privacy-policy.html','help.html'])await access(join(dist,file));
+console.log(`Built RepoRun ${m.version}: ${dist}`);

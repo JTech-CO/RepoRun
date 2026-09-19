@@ -1,0 +1,53 @@
+{
+  "base": "RepoRun-v1.0.0-source.zip",
+  "modifiedVersion": "1.0.1",
+  "unchangedFiles": [
+    {
+      "file": "src/background/github.js",
+      "unchanged": true,
+      "sha256": "3ccb7e3933b764e5299ae77394a4899487901fc4ab6308e8a7b8df0ce0312b80"
+    },
+    {
+      "file": "src/background/index.js",
+      "unchanged": true,
+      "sha256": "52d8ee71aba08350154d2cdc29ce8b7b94e4002b0255088322e9287be0736ba2"
+    },
+    {
+      "file": "src/background/store.js",
+      "unchanged": true,
+      "sha256": "bafd96580df3bc47d8fef78fdf0190ae66600a807324d2550ef045642832dd5a"
+    },
+    {
+      "file": "src/background/service.js",
+      "unchanged": true,
+      "sha256": "50512a5f703d02b07498a20e26165a6b357fe4dccaab240a50b22b779e97e6aa"
+    },
+    {
+      "file": "src/shared/analyzer.js",
+      "unchanged": true,
+      "sha256": "edfd95aa3d3b44ba19de3ee2e37064a2569f5c73ba2c48427a13078b984fc7fb"
+    },
+    {
+      "file": "src/shared/ui.js",
+      "unchanged": true,
+      "sha256": "69aa010a99e84d3ac815ebeabddebb45180819acb2cc91f69d78aa082bb8635d"
+    },
+    {
+      "file": "src/content/panel.js",
+      "unchanged": true,
+      "sha256": "58f21276bafdac3adf7f847ecb6892a70cb04df10905b74c3a8b5b5f01426061"
+    },
+    {
+      "file": "src/options/index.js",
+      "unchanged": true,
+      "sha256": "a53f8da3640003e539306f5ffd8622a74e1c5c2fda9d43020d77db235301df72"
+    },
+    {
+      "file": "src/popup/index.js",
+      "unchanged": true,
+      "sha256": "76ff4efdbea3412c325e36e3a319f08ddc7f890ead554923c1bf79c8b071b037"
+    }
+  ],
+  "permissionsUnchanged": true,
+  "coreChange": "version string only"
+}

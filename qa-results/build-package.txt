@@ -1,0 +1,641 @@
+
+> reporun@1.0.1 package
+> node scripts/package.mjs
+
+TAP version 13
+# Subtest: engines and manager declarations are not inferred
+ok 1 - engines and manager declarations are not inferred
+  ---
+  duration_ms: 5.646026
+  type: 'test'
+  ...
+# Subtest: missing runtime is unknown even when a node package exists
+ok 2 - missing runtime is unknown even when a node package exists
+  ---
+  duration_ms: 0.524367
+  type: 'test'
+  ...
+# Subtest: nvmrc and node-version are kept separately
+ok 3 - nvmrc and node-version are kept separately
+  ---
+  duration_ms: 0.729816
+  type: 'test'
+  ...
+# Subtest: devEngines array runtime is displayed without resolving versions
+ok 4 - devEngines array runtime is displayed without resolving versions
+  ---
+  duration_ms: 0.419437
+  type: 'test'
+  ...
+# Subtest: Volta and tool-versions preserve their evidence
+ok 5 - Volta and tool-versions preserve their evidence
+  ---
+  duration_ms: 0.797855
+  type: 'test'
+  ...
+# Subtest: lockfile names create an inference not a verified requirement
+ok 6 - lockfile names create an inference not a verified requirement
+  ---
+  duration_ms: 0.997184
+  type: 'test'
+  ...
+# Subtest: mixed manager declarations and lockfiles are flagged
+ok 7 - mixed manager declarations and lockfiles are flagged
+  ---
+  duration_ms: 0.759611
+  type: 'test'
+  ...
+# Subtest: invalid JSON does not become a fake Node diagnosis
+ok 8 - invalid JSON does not become a fake Node diagnosis
+  ---
+  duration_ms: 0.540382
+  type: 'test'
+  ...
+# Subtest: JSON BOM is accepted
+ok 9 - JSON BOM is accepted
+  ---
+  duration_ms: 1.290068
+  type: 'test'
+  ...
+# Subtest: index.html is only entry point evidence
+ok 10 - index.html is only entry point evidence
+  ---
+  duration_ms: 0.743699
+  type: 'test'
+  ...
+# Subtest: Vite and Next declarations never certify static hosting
+ok 11 - Vite and Next declarations never certify static hosting
+  ---
+  duration_ms: 0.589965
+  type: 'test'
+  ...
+# Subtest: literal scripts are preserved and annotated
+ok 12 - literal scripts are preserved and annotated
+  ---
+  duration_ms: 0.405545
+  type: 'test'
+  ...
+# Subtest: script secret redaction disables copy
+ok 13 - script secret redaction disables copy
+  ---
+  duration_ms: 0.350454
+  type: 'test'
+  ...
+# Subtest: multiline script is never copied as an unreviewed shell sequence
+ok 14 - multiline script is never copied as an unreviewed shell sequence
+  ---
+  duration_ms: 0.235793
+  type: 'test'
+  ...
+# Subtest: script count is bounded and disclosed
+ok 15 - script count is bounded and disclosed
+  ---
+  duration_ms: 13.565226
+  type: 'test'
+  ...
+# Subtest: environment output contains names and never example values
+ok 16 - environment output contains names and never example values
+  ---
+  duration_ms: 1.710676
+  type: 'test'
+  ...
+# Subtest: environment names are deduplicated across examples
+ok 17 - environment names are deduplicated across examples
+  ---
+  duration_ms: 0.434621
+  type: 'test'
+  ...
+# Subtest: variable names are bounded and disclosed
+ok 18 - variable names are bounded and disclosed
+  ---
+  duration_ms: 1.356639
+  type: 'test'
+  ...
+# Subtest: workspace declarations are shown but not expanded
+ok 19 - workspace declarations are shown but not expanded
+  ---
+  duration_ms: 0.3128
+  type: 'test'
+  ...
+# Subtest: directory inspection warns about uninherited parents
+ok 20 - directory inspection warns about uninherited parents
+  ---
+  duration_ms: 0.259258
+  type: 'test'
+  ...
+# Subtest: Docker FROM is source evidence, not a mandatory service
+ok 21 - Docker FROM is source evidence, not a mandatory service
+  ---
+  duration_ms: 0.633756
+  type: 'test'
+  ...
+# Subtest: Compose is presence-only rather than a partial YAML assertion
+ok 22 - Compose is presence-only rather than a partial YAML assertion
+  ---
+  duration_ms: 0.29623
+  type: 'test'
+  ...
+# Subtest: README extracts only a bounded sample of shell-fenced lines
+ok 23 - README extracts only a bounded sample of shell-fenced lines
+  ---
+  duration_ms: 0.709023
+  type: 'test'
+  ...
+# Subtest: README command text is not treated as a declared runtime requirement
+ok 24 - README command text is not treated as a declared runtime requirement
+  ---
+  duration_ms: 0.404602
+  type: 'test'
+  ...
+# Subtest: configuration JS is presence only
+ok 25 - configuration JS is presence only
+  ---
+  duration_ms: 0.299021
+  type: 'test'
+  ...
+# Subtest: browser extension manifest is not classified as standalone website
+ok 26 - browser extension manifest is not classified as standalone website
+  ---
+  duration_ms: 0.290817
+  type: 'test'
+  ...
+# Subtest: evidence always pins the inspected commit
+ok 27 - evidence always pins the inspected commit
+  ---
+  duration_ms: 0.245527
+  type: 'test'
+  ...
+# Subtest: partial file tree warning survives normalization
+ok 28 - partial file tree warning survives normalization
+  ---
+  duration_ms: 0.185189
+  type: 'test'
+  ...
+# Subtest: symlink presence is not enough to declare an HTML entry
+ok 29 - symlink presence is not enough to declare an HTML entry
+  ---
+  duration_ms: 0.174574
+  type: 'test'
+  ...
+# Subtest: tab/control-containing scripts cannot be copied
+ok 30 - tab/control-containing scripts cannot be copied
+  ---
+  duration_ms: 0.43444
+  type: 'test'
+  ...
+# Subtest: repetitive runtime-file declarations are bounded and disclosed
+ok 31 - repetitive runtime-file declarations are bounded and disclosed
+  ---
+  duration_ms: 0.545945
+  type: 'test'
+  ...
+# Subtest: Docker FROM output is bounded and disclosed
+ok 32 - Docker FROM output is bounded and disclosed
+  ---
+  duration_ms: 0.525634
+  type: 'test'
+  ...
+# Subtest: valid repository and case-insensitive cache key
+ok 33 - valid repository and case-insensitive cache key
+  ---
+  duration_ms: 2.044776
+  type: 'test'
+  ...
+# Subtest: reject non-repository URL: https://evil.example/octo/demo
+ok 34 - reject non-repository URL: https://evil.example/octo/demo
+  ---
+  duration_ms: 0.303665
+  type: 'test'
+  ...
+# Subtest: reject non-repository URL: https://github.com/settings/tokens
+ok 35 - reject non-repository URL: https://github.com/settings/tokens
+  ---
+  duration_ms: 0.267642
+  type: 'test'
+  ...
+# Subtest: reject non-repository URL: https://github.com/notifications
+ok 36 - reject non-repository URL: https://github.com/notifications
+  ---
+  duration_ms: 0.205629
+  type: 'test'
+  ...
+# Subtest: reject non-repository URL: https://user:pass@github.com/octo/demo
+ok 37 - reject non-repository URL: https://user:pass@github.com/octo/demo
+  ---
+  duration_ms: 0.202901
+  type: 'test'
+  ...
+# Subtest: reject non-repository URL: https://github.com/orgs/octo
+ok 38 - reject non-repository URL: https://github.com/orgs/octo
+  ---
+  duration_ms: 0.28776
+  type: 'test'
+  ...
+# Subtest: reject non-repository URL: https://github.com/octo/%2Fsecret
+ok 39 - reject non-repository URL: https://github.com/octo/%2Fsecret
+  ---
+  duration_ms: 0.516347
+  type: 'test'
+  ...
+# Subtest: repository subpages remain associated with their repository
+ok 40 - repository subpages remain associated with their repository
+  ---
+  duration_ms: 1.233526
+  type: 'test'
+  ...
+# Subtest: reject unsafe directory: ../secrets
+ok 41 - reject unsafe directory: ../secrets
+  ---
+  duration_ms: 1.187918
+  type: 'test'
+  ...
+# Subtest: reject unsafe directory: src/../a
+ok 42 - reject unsafe directory: src/../a
+  ---
+  duration_ms: 0.657831
+  type: 'test'
+  ...
+# Subtest: reject unsafe directory: /src
+ok 43 - reject unsafe directory: /src
+  ---
+  duration_ms: 0.226464
+  type: 'test'
+  ...
+# Subtest: reject unsafe directory: a//b
+ok 44 - reject unsafe directory: a//b
+  ---
+  duration_ms: 0.223401
+  type: 'test'
+  ...
+# Subtest: reject unsafe directory: a%2fb
+ok 45 - reject unsafe directory: a%2fb
+  ---
+  duration_ms: 0.10105
+  type: 'test'
+  ...
+# Subtest: reject unsafe directory: a\\b
+ok 46 - reject unsafe directory: a\\b
+  ---
+  duration_ms: 0.079393
+  type: 'test'
+  ...
+# Subtest: reject unsafe directory: a?ref=x
+ok 47 - reject unsafe directory: a?ref=x
+  ---
+  duration_ms: 0.082157
+  type: 'test'
+  ...
+# Subtest: reject unsafe directory: a\#x
+ok 48 - reject unsafe directory: a\#x
+  ---
+  duration_ms: 0.082611
+  type: 'test'
+  ...
+# Subtest: reject unsafe directory: a/b/c/d/e/f
+ok 49 - reject unsafe directory: a/b/c/d/e/f
+  ---
+  duration_ms: 0.195134
+  type: 'test'
+  ...
+# Subtest: unicode directory and spaces are valid
+ok 50 - unicode directory and spaces are valid
+  ---
+  duration_ms: 0.150192
+  type: 'test'
+  ...
+# Subtest: evidence uses a pinned SHA and escaped filename
+ok 51 - evidence uses a pinned SHA and escaped filename
+  ---
+  duration_ms: 0.298743
+  type: 'test'
+  ...
+# Subtest: redaction removes token-like strings and password values
+ok 52 - redaction removes token-like strings and password values
+  ---
+  duration_ms: 0.70698
+  type: 'test'
+  ...
+# Subtest: display text neutralizes bidi control characters
+ok 53 - display text neutralizes bidi control characters
+  ---
+  duration_ms: 0.347921
+  type: 'test'
+  ...
+# Subtest: environment secret files are not allowlisted
+ok 54 - environment secret files are not allowlisted
+  ---
+  duration_ms: 0.118709
+  type: 'test'
+  ...
+# Subtest: language and error dictionaries have matching keys
+ok 55 - language and error dictionaries have matching keys
+  ---
+  duration_ms: 0.408423
+  type: 'test'
+  ...
+# Subtest: content messages can request their own analysis
+ok 56 - content messages can request their own analysis
+  ---
+  duration_ms: 0.244416
+  type: 'test'
+  ...
+# Subtest: content cannot call privileged TOKEN
+ok 57 - content cannot call privileged TOKEN
+  ---
+  duration_ms: 0.184171
+  type: 'test'
+  ...
+# Subtest: content cannot call privileged OPTIONS
+ok 58 - content cannot call privileged OPTIONS
+  ---
+  duration_ms: 0.071654
+  type: 'test'
+  ...
+# Subtest: content cannot call privileged DIAGNOSTICS
+ok 59 - content cannot call privileged DIAGNOSTICS
+  ---
+  duration_ms: 0.057949
+  type: 'test'
+  ...
+# Subtest: content cannot call privileged CLEAR
+ok 60 - content cannot call privileged CLEAR
+  ---
+  duration_ms: 0.865639
+  type: 'test'
+  ...
+# Subtest: content cannot analyze a different repository
+ok 61 - content cannot analyze a different repository
+  ---
+  duration_ms: 0.264431
+  type: 'test'
+  ...
+# Subtest: messages from nested frames are denied
+ok 62 - messages from nested frames are denied
+  ---
+  duration_ms: 0.334156
+  type: 'test'
+  ...
+# Subtest: foreign extension ID is denied
+ok 63 - foreign extension ID is denied
+  ---
+  duration_ms: 0.136061
+  type: 'test'
+  ...
+# Subtest: trusted extension page can manage a token
+ok 64 - trusted extension page can manage a token
+  ---
+  duration_ms: 0.074091
+  type: 'test'
+  ...
+# Subtest: one scan resolves a fixed commit and only named setup files
+ok 65 - one scan resolves a fixed commit and only named setup files
+  ---
+  duration_ms: 17.086776
+  type: 'test'
+  ...
+# Subtest: reports do not contain file contents, token, or environment values
+ok 66 - reports do not contain file contents, token, or environment values
+  ---
+  duration_ms: 1.460326
+  type: 'test'
+  ...
+# Subtest: token is only in protected session storage, preferences are local
+ok 67 - token is only in protected session storage, preferences are local
+  ---
+  duration_ms: 0.606296
+  type: 'test'
+  ...
+# Subtest: warm report cache makes zero additional API requests
+ok 68 - warm report cache makes zero additional API requests
+  ---
+  duration_ms: 0.992542
+  type: 'test'
+  ...
+# Subtest: explicit refresh bypasses the report cache
+ok 69 - explicit refresh bypasses the report cache
+  ---
+  duration_ms: 0.950326
+  type: 'test'
+  ...
+# Subtest: concurrent requests for the same scope share one scan
+ok 70 - concurrent requests for the same scope share one scan
+  ---
+  duration_ms: 2.579366
+  type: 'test'
+  ...
+# Subtest: setting a token clears old reports
+ok 71 - setting a token clears old reports
+  ---
+  duration_ms: 1.71261
+  type: 'test'
+  ...
+# Subtest: cache clear preserves the token but changes the session epoch
+ok 72 - cache clear preserves the token but changes the session epoch
+  ---
+  duration_ms: 0.412683
+  type: 'test'
+  ...
+# Subtest: expired cached results are not returned
+ok 73 - expired cached results are not returned
+  ---
+  duration_ms: 0.499271
+  type: 'test'
+  ...
+# Subtest: session cache keeps at most eight reports
+ok 74 - session cache keeps at most eight reports
+  ---
+  duration_ms: 2.427778
+  type: 'test'
+  ...
+# Subtest: old-epoch report cannot be stored
+ok 75 - old-epoch report cannot be stored
+  ---
+  duration_ms: 1.493334
+  type: 'test'
+  ...
+# Subtest: symlink setup files are never followed
+ok 76 - symlink setup files are never followed
+  ---
+  duration_ms: 0.647191
+  type: 'test'
+  ...
+# Subtest: oversize file is skipped before a blob request
+ok 77 - oversize file is skipped before a blob request
+  ---
+  duration_ms: 1.070842
+  type: 'test'
+  ...
+# Subtest: LFS pointer and binary data are not parsed
+ok 78 - LFS pointer and binary data are not parsed
+  ---
+  duration_ms: 0.647401
+  type: 'test'
+  ...
+# Subtest: empty repository produces a specific error
+ok 79 - empty repository produces a specific error
+  ---
+  duration_ms: 0.483127
+  type: 'test'
+  ...
+# Subtest: nested directory is selected by tree SHA not guessed API paths
+ok 80 - nested directory is selected by tree SHA not guessed API paths
+  ---
+  duration_ms: 1.924798
+  type: 'test'
+  ...
+# Subtest: missing directory is not silently replaced with root
+ok 81 - missing directory is not silently replaced with root
+  ---
+  duration_ms: 0.670282
+  type: 'test'
+  ...
+# Subtest: truncated tree remains visibly partial
+ok 82 - truncated tree remains visibly partial
+  ---
+  duration_ms: 0.777401
+  type: 'test'
+  ...
+# Subtest: blob request budget includes unsuccessful reads
+ok 83 - blob request budget includes unsuccessful reads
+  ---
+  duration_ms: 2.340208
+  type: 'test'
+  ...
+# Subtest: network errors abort instead of presenting a clean partial report
+ok 84 - network errors abort instead of presenting a clean partial report
+  ---
+  duration_ms: 2.049703
+  type: 'test'
+  ...
+# Subtest: total scan budget stops a prolonged sequence before another request
+ok 85 - total scan budget stops a prolonged sequence before another request
+  ---
+  duration_ms: 0.454131
+  type: 'test'
+  ...
+# Subtest: native-style receiver stays bound to globalThis
+ok 86 - native-style receiver stays bound to globalThis
+  ---
+  duration_ms: 47.425856
+  type: 'test'
+  ...
+# Subtest: diagnostics uses the same receiver-sensitive transport
+ok 87 - diagnostics uses the same receiver-sensitive transport
+  ---
+  duration_ms: 2.541682
+  type: 'test'
+  ...
+# Subtest: token goes only into the API Authorization header
+ok 88 - token goes only into the API Authorization header
+  ---
+  duration_ms: 1.673664
+  type: 'test'
+  ...
+# Subtest: Illegal invocation is a programming error and is not retried
+ok 89 - Illegal invocation is a programming error and is not retried
+  ---
+  duration_ms: 1.233521
+  type: 'test'
+  ...
+# Subtest: network failures remain distinct from JSON failures
+ok 90 - network failures remain distinct from JSON failures
+  ---
+  duration_ms: 0.832987
+  type: 'test'
+  ...
+# Subtest: a successful non-JSON body is BAD_RESPONSE not NETWORK
+ok 91 - a successful non-JSON body is BAD_RESPONSE not NETWORK
+  ---
+  duration_ms: 0.997346
+  type: 'test'
+  ...
+# Subtest: HTTP 401 maps to TOKEN_REJECTED
+ok 92 - HTTP 401 maps to TOKEN_REJECTED
+  ---
+  duration_ms: 1.24484
+  type: 'test'
+  ...
+# Subtest: HTTP 403 maps to FORBIDDEN
+ok 93 - HTTP 403 maps to FORBIDDEN
+  ---
+  duration_ms: 0.614239
+  type: 'test'
+  ...
+# Subtest: HTTP 404 maps to NOT_FOUND
+ok 94 - HTTP 404 maps to NOT_FOUND
+  ---
+  duration_ms: 1.226444
+  type: 'test'
+  ...
+# Subtest: HTTP 409 maps to EMPTY_REPO
+ok 95 - HTTP 409 maps to EMPTY_REPO
+  ---
+  duration_ms: 1.380727
+  type: 'test'
+  ...
+# Subtest: HTTP 500 maps to GITHUB_UNAVAILABLE
+ok 96 - HTTP 500 maps to GITHUB_UNAVAILABLE
+  ---
+  duration_ms: 1.449251
+  type: 'test'
+  ...
+# Subtest: HTTP 422 maps to API_ERROR
+ok 97 - HTTP 422 maps to API_ERROR
+  ---
+  duration_ms: 0.829393
+  type: 'test'
+  ...
+# Subtest: rate limit is distinguished from ordinary 403
+ok 98 - rate limit is distinguished from ordinary 403
+  ---
+  duration_ms: 1.23427
+  type: 'test'
+  ...
+# Subtest: active cooldown prevents another core request
+ok 99 - active cooldown prevents another core request
+  ---
+  duration_ms: 1.590007
+  type: 'test'
+  ...
+# Subtest: oversized response is rejected
+ok 100 - oversized response is rejected
+  ---
+  duration_ms: 0.665498
+  type: 'test'
+  ...
+# Subtest: untrusted final response origin is rejected
+ok 101 - untrusted final response origin is rejected
+  ---
+  duration_ms: 0.435435
+  type: 'test'
+  ...
+# Subtest: credentials changed in-flight invalidate the response
+ok 102 - credentials changed in-flight invalidate the response
+  ---
+  duration_ms: 0.410484
+  type: 'test'
+  ...
+# Subtest: endpoint builder cannot target another origin or arbitrary API path
+ok 103 - endpoint builder cannot target another origin or arbitrary API path
+  ---
+  duration_ms: 0.695483
+  type: 'test'
+  ...
+# Subtest: branch slashes are query-encoded, not injected as URL paths
+ok 104 - branch slashes are query-encoded, not injected as URL paths
+  ---
+  duration_ms: 0.416754
+  type: 'test'
+  ...
+1..104
+# tests 104
+# suites 0
+# pass 104
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 316.661433
+Syntax/JSON: 23; version, locale, permissions and icon hashes: PASS
+Built RepoRun 1.0.1: /mnt/data/reporun-update/RepoRun/dist
+Packaged /mnt/data/reporun-update/RepoRun/releases/RepoRun-v1.0.1-chrome.zip

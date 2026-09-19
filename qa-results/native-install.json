@@ -1,0 +1,8 @@
+{
+  "requestedVersion": "1.0.1",
+  "loaded": false,
+  "githubTested": false,
+  "browser": "144.0.7559.96",
+  "workerError": "Timeout 6000ms exceeded while waiting for event \"serviceworker\"",
+  "navigationError": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at chrome://extensions/\nCall log:\n  - navigating to \"chrome://extensions/\", waiting until \"load\"\n"
+}

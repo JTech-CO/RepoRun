@@ -1,0 +1,167 @@
+{
+  "browser": "144.0.7559.96",
+  "checks": [
+    {
+      "name": "launcher is inside About, not Releases",
+      "pass": true
+    },
+    {
+      "name": "no RepoRun launcher in repository header",
+      "pass": true
+    },
+    {
+      "name": "one launcher total",
+      "pass": true
+    },
+    {
+      "name": "sidebar button has readable text",
+      "pass": true
+    },
+    {
+      "name": "sidebar has brief setup hint",
+      "pass": true
+    },
+    {
+      "name": "sidebar is not a floating panel",
+      "pass": true
+    },
+    {
+      "name": "new blue SVG decoded",
+      "pass": true
+    },
+    {
+      "name": "passive launch placement makes zero API calls",
+      "pass": true
+    },
+    {
+      "name": "other Repo tools and Star are unchanged",
+      "pass": true
+    },
+    {
+      "name": "fallback is precisely 44x44 CSS pixels",
+      "pass": true
+    },
+    {
+      "name": "fallback stays inside right/bottom safe edge",
+      "pass": true
+    },
+    {
+      "name": "fallback icon only, label hidden visually",
+      "pass": true
+    },
+    {
+      "name": "fallback retains Korean accessible name",
+      "pass": true
+    },
+    {
+      "name": "fallback relocation reuses same host and listener",
+      "pass": true
+    },
+    {
+      "name": "focus preserved after responsive relocation",
+      "pass": true
+    },
+    {
+      "name": "tooltip available by keyboard focus",
+      "pass": true
+    },
+    {
+      "name": "fallback opens exactly one analysis panel",
+      "pass": true
+    },
+    {
+      "name": "fallback hidden while modal is open",
+      "pass": true
+    },
+    {
+      "name": "fallback restored after modal close",
+      "pass": true
+    },
+    {
+      "name": "focus restored after closing fallback-opened modal",
+      "pass": true
+    },
+    {
+      "name": "sidebar recovers after desktop resize",
+      "pass": true
+    },
+    {
+      "name": "hidden sidebar falls back",
+      "pass": true
+    },
+    {
+      "name": "visibility hidden sidebar falls back",
+      "pass": true
+    },
+    {
+      "name": "stacked About does not receive desktop sidebar button",
+      "pass": true
+    },
+    {
+      "name": "deleted sidebar recovers with existing host",
+      "pass": true
+    },
+    {
+      "name": "late loaded About automatically gains the launcher",
+      "pass": true
+    },
+    {
+      "name": "no duplicated launcher after sidebar replacement",
+      "pass": true
+    },
+    {
+      "name": "GitHub removing the injected node is repaired",
+      "pass": true
+    },
+    {
+      "name": "event bursts do not duplicate launcher",
+      "pass": true
+    },
+    {
+      "name": "event bursts do not trigger API scans",
+      "pass": true
+    },
+    {
+      "name": "header remains unchanged after every relocation",
+      "pass": true
+    },
+    {
+      "name": "Korean About + section markup supported",
+      "pass": true
+    },
+    {
+      "name": "explicit About test marker supported without English heading",
+      "pass": true
+    },
+    {
+      "name": "unrelated sidebar section is not mistaken for About",
+      "pass": true
+    },
+    {
+      "name": "ambiguous About wrapper uses fallback rather than appending below Releases",
+      "pass": true
+    },
+    {
+      "name": "non-repository navigation removes fallback",
+      "pass": true
+    },
+    {
+      "name": "return to repository restores a single launcher",
+      "pass": true
+    },
+    {
+      "name": "SPA repository change does not strand duplicates",
+      "pass": true
+    },
+    {
+      "name": "SPA repository change does not auto-analyze",
+      "pass": true
+    },
+    {
+      "name": "no uncaught JavaScript errors",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "scope": "Real Chromium layout/DOM with simulated GitHub/Chrome APIs. Not installed Chrome/GitHub certification."
+}
