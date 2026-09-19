@@ -1,0 +1,18 @@
+{
+  "name": "reporun",
+  "version": "1.0.1",
+  "private": true,
+  "description": "Read-only GitHub execution-requirement inspector",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "test": "node scripts/test.mjs",
+    "build": "node scripts/build.mjs",
+    "package": "node scripts/package.mjs",
+    "serve:qa": "node scripts/serve.mjs"
+  }
+}
